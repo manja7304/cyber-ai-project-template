@@ -29,10 +29,9 @@ htmlcov/
 .mypy_cache/
 .ruff_cache/
 
-# Logs and traces
+# Logs
 logs/
 *.log
-trace.json
 
 # Build artifacts
 dist/

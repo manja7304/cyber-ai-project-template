@@ -1,0 +1,19 @@
+[
+  {
+    "step": "health_check",
+    "output": {
+      "status": "ok"
+    }
+  },
+  {
+    "step": "metrics_check",
+    "output": "# HELP cyber_ai_up Application is running\n# TYPE cyber_ai_up gauge\ncyber_ai_up 1\n# HELP cyber_ai_http_requests_total Total HTTP requests (stub)\n# TYPE cyber_ai_http_requests_total counter\ncyber_ai_http_requests_total{endpoint=\"health\"} 0"
+  },
+  {
+    "step": "llm_factory",
+    "output": {
+      "provider": "ollama",
+      "sample": "Portfolio template: shared LLM factory and Docker scaffold for security AI repos."
+    }
+  }
+]
