@@ -147,9 +147,22 @@ No committed demo corpus — intentional. Fork this template, add `demo-data/`, 
 
 ## Video Demo
 
-[![Demo Video](https://img.shields.io/badge/Demo-YouTube-red?style=for-the-badge&logo=youtube)](https://www.youtube.com/watch?v=PLACEHOLDER)
+- **Walkthrough:** [`demos/WALKTHROUGH.md`](demos/WALKTHROUGH.md) — step-by-step demo with captured live output
+- **Captured JSON:** [`demos/captured/response.json`](demos/captured/response.json)
+- Record your 2-min Loom using `python scripts/run_demo.py` (works offline with `USE_MOCK_LLM=true`)
 
-> 90-second walkthrough: folder structure → `create_chat_model()` → `docker compose up` → `/health`. Record using [`demos/RECORDING_SCRIPT.md`](demos/RECORDING_SCRIPT.md).
+### Live Demo Output
+
+```json
+{
+  "health": {
+    "status": "ok"
+  },
+  "llm_provider": "ollama"
+}
+```
+
+> Full trace and request payloads in [`demos/captured/`](demos/captured/). See [`demos/RECORDING_SCRIPT.md`](demos/RECORDING_SCRIPT.md) for narration cues.
 
 ---
 

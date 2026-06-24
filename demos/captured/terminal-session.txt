@@ -1,0 +1,24 @@
+# Terminal replay — Cyber AI Project Template
+# Captured: 2026-06-24 17:41:53 UTC · USE_MOCK_LLM=true
+
+$ cd cyber-ai-project-template
+$ export USE_MOCK_LLM=true LLM_PROVIDER=mock
+$ python scripts/run_demo.py
+
+▸ Health check
+  GET /health → 200
+{
+  "status": "ok"
+}
+
+▸ Prometheus metrics (excerpt)
+# HELP cyber_ai_up Application is running
+# TYPE cyber_ai_up gauge
+cyber_ai_up 1
+# HELP cyber_ai_http_requests_total Total HTTP requests (stub)
+# TYPE cyber_ai_http_requests_total counter
+cyber_ai_http_requests_total{endpoint="health"} 0
+
+▸ LLM factory
+  Provider: ollama
+  Portfolio template: shared LLM factory and Docker scaffold for security AI repos.

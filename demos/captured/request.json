@@ -1,0 +1,7 @@
+{
+  "endpoints": [
+    "/health",
+    "/metrics"
+  ],
+  "llm_factory_demo": true
+}
